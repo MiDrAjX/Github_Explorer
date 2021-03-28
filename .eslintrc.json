@@ -31,6 +31,21 @@
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "camelcase": [
+      "error",
+      {
+        "allow": [
+          "full_name",
+          "avatar_url"
+        ]
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -48,6 +63,7 @@
         "tsx": "never"
       }
     ],
+    "react/jsx-one-expression-per-line": "off",
     "no-use-before-define": "off",
     "prettier/prettier": "error"
   },
